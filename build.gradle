@@ -15,3 +15,10 @@ allprojects {
         plugin("io.gitlab.arturbosch.detekt")
     }
 }
+
+tasks.detekt.configure {
+    reports {
+        xml.required.set(true)
+        xml.outputLocation.set(file("build/reports/detekt.xml"))
+    }
+}
