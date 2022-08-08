@@ -1,8 +1,6 @@
 name: run detekt
 on: 
   pull_request:
-    branches-ignore:
-      - 'dependabot/**'
 
 jobs:
   detekt:
